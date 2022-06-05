@@ -39,7 +39,7 @@ import styles from '../styles/Home.module.css'
               <button className={styles.buttonLogin}>
                <p>Continue como davidbernardo</p>
              </button>
-             <a src="#" className={styles.signUp}>Remover conta</a>
+             <a className={styles.signUp}>Remover conta</a>
                          
             </div>
 
