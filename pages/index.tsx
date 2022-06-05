@@ -1,6 +1,7 @@
 
 import Head from 'next/head'
 import Image from 'next/image'
+import img1 from '../src/img/img1.png'
 import imgCelular from '../src/img/instagram-celular.png'
 import instagram from '../src/img/instagram-logo.png'
 import perfil from '../src/img/perfil-instagram.jpg'
@@ -19,8 +20,12 @@ import styles from '../styles/Home.module.css'
       <main className={styles.container}>
         <div className={styles.wrapper}>
           <div className={styles.phone}>
-            <Image src={imgCelular} alt="celular"/>                     
-          </div>
+            <Image src={imgCelular} alt="celular"/> 
+            <div className={styles.imgBackground}>
+            <Image src={img1} alt="img1"/>
+            </div>
+           
+            </div>
           <div className={styles.login}>
             <div className={styles.group}>
               <div className={styles.logo} >
@@ -40,14 +45,18 @@ import styles from '../styles/Home.module.css'
 
             <div className={styles.group}>
               <p className={styles.notAccount}>Não sou davidbernardo?</p>
-              <p className={styles.notaccount}>
+              <p className={styles.notAccount}>
                 <span >Alternar Contas</span> ou 
                 <span> Inscreva-se</span>
               </p>
             </div>
             <div className={styles.getApp}>
               <p>Baixe o aplicativo</p>
-              
+              <div className={styles.download}>
+                <div className={styles.appDownload}/>
+                <div className={styles.appDownload}/>
+               
+              </div>
             </div>
             
           </div>
